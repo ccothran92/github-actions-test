@@ -9,6 +9,5 @@ jobs:
         uses: actions/hello-world-latest-action@master
         with:
           who-to-greet: Bob
-
-      - name:
+      - name: echo greet ID
         run: echo "${{steps.greetId}}
