@@ -1,4 +1,4 @@
-name: Actions Workflow Test
+name: Who Am I
 on: [push]
 jobs: 
   whereami:
