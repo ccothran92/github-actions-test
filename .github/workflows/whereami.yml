@@ -16,4 +16,5 @@ jobs:
     steps:
       - name: Run github stuff
         run: |
-          git clone $GITHUB_REPOSITORY
+          git clone git@github:$GITHUB_REPOSITORY
+          git checkout $GITHUB_SHA
