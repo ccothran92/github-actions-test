@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greetId
-        uses: actions/hello-world-latest-action@master
+        uses: actions/hello-world-javascript-action@master
         with:
           who-to-greet: Bob
       - name: echo greet ID
