@@ -10,4 +10,4 @@ jobs:
         with:
           who-to-greet: Bob
       - name: echo greet ID
-        run: echo "${{steps.greetId}}
+        run: echo "${{steps.greetId}}"
