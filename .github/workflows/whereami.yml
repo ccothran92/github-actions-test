@@ -1,0 +1,10 @@
+name: Actions Workflow Test
+on: [push]
+jobs: 
+  whereami:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Simple JS Action
+        run: |
+          pwd
+          ls
