@@ -9,3 +9,5 @@ jobs:
       - name: Simple JS Action
         run: |
           ls -a
+      - name:
+        run: printenv
