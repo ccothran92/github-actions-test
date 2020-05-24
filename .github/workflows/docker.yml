@@ -17,7 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: node:13.5.0-alpine3.10
-      volumes: /results
     steps: 
       - name: Log Node Version
         run: |
