@@ -8,7 +8,8 @@ jobs:
     steps: 
       - name: Log Node Version
         run: |
+          echo 'Saving results to myfile.txt'
           npm -v > myfile.txt
-          cat /etc/os-release
+          echo 'Done running command'
 
     
