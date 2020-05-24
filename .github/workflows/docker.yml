@@ -28,5 +28,7 @@ jobs:
           ls -a
       - name: List all my env vars in container
         run: printenv
+      - name: Run NPM install
+        run: npm install
 
     
