@@ -10,13 +10,14 @@ jobs:
       - name: List entire directory contents
         run: |
           ls -a
-      - name: List all my env vars
-        run: printenv
+      - name: Current working directory
+        run: pwd
   node-docker:
     name: Run Docker
     runs-on: ubuntu-latest
     container:
       image: node:13.5.0-alpine3.10
+      volumes: ${pwd}
     steps: 
       - name: Log Node Version
         run: |
