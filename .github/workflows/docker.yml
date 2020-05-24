@@ -31,5 +31,8 @@ jobs:
         run: printenv
       - name: Run NPM install
         run: npm install
+      - name: checkout
+        uses: actions/checkout@v1
+
 
     
