@@ -1,15 +1,33 @@
 name: "My Node Container"
 on: push
 jobs:
+  checkout-job:
+    name: Check out Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: List entire directory contents
+        run: |
+          ls -a
+      - name: List all my env vars
+        run: printenv
   node-docker:
+    name: Run Docker
     runs-on: ubuntu-latest
     container:
       image: node:13.5.0-alpine3.10
+      volumes: /results
     steps: 
       - name: Log Node Version
         run: |
           echo 'Saving results to myfile.txt'
-          npm -v > myfile.txt
+          npm -v > results/myfile.txt
           echo 'Done running command'
+      - name: List entire directory contents in Container
+        run: |
+          ls -a
+      - name: List all my env vars in container
+        run: printenv
 
     
