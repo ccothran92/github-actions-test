@@ -20,6 +20,7 @@ jobs:
     steps: 
       - name: Log Node Version
         run: |
+          mkdir results
           echo 'Saving results to myfile.txt'
           npm -v > results/myfile.txt
           echo 'Done running command'
