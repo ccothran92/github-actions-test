@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "In my script file"
-echo %1
+echo $1
