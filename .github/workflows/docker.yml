@@ -50,6 +50,7 @@ jobs:
           entrypoint: /usr/local/bin/node
           args: -v
       - name: Run a script
+        uses: ubuntu-latest
         with:
           entrypoint: ./script.sh
           args: "this is my message from actions"
