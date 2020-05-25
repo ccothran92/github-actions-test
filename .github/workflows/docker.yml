@@ -52,7 +52,8 @@ jobs:
           args: -v
       - uses: actions/checkout@v1
       - name: Run a script
-        run: ls -l script.sh
+        run: ls -l ./script.sh
+      - name: Run a script
         uses: docker://node:12.14.1-alpine3.10
         with:
           entrypoint: ./script.sh
