@@ -56,6 +56,7 @@ jobs:
         with:
           entrypoint: ./script.sh
           args: "this is my message from actions"
+        run: ls -l script.sh
 
 
 
